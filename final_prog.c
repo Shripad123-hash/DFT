@@ -6,12 +6,12 @@
 void main()
 {
     int k,n,N;
-    float static X[100],X_Real[100],X_Imag[100];
-    printf("\t Discrete fourier\n");
+    float static X[100],X_Real[100],X_Imag[100];  //declaring the necessary variables
+    printf(" Discrete fourier\n");
 
-    printf("\n Enter the number of samples in sequence X(n)=");
+    printf("\n Enter the number of samples in sequence X(n)=");   //input the no of samples
     scanf("%d",&N);
-    printf("Enter the numbers of sequenc\n");
+    printf("Enter the numbers of sequenc\n");     //input the sequence
     for(n=0;n<N;n++)
     {
         printf("X(%d)=",n);
@@ -34,8 +34,8 @@ void main()
     }
     printf("\nThe %d point DFT is:\n",N);
     printf("\n\n\tReal X(k)\t\tImaginary X(k)\n");
-    for(k=0;k<N;k++)
-    printf("\nX(%d)=%f\t\t\t%f\t\t",k,X_Real[k],X_Imag[k]);
+    for(k=0;k<N;k++)                                       //printing the DFT
+    printf("\nX(%d)=%f\t\t%f\t\t",k,X_Real[k],X_Imag[k]);
 
     getch();
 }
